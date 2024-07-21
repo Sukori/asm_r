@@ -1,10 +1,11 @@
-NAME	= hello
+NAME	= exe
 AC	= nasm
 DEBUG	= -g
 LD	= ld
 FLAGS	= -f elf64
-SRCS	= main.asm \
-	itoa.asm
+SRCS	= print.asm \
+		itoa.asm \
+		read.asm
 OBJS	= $(SRCS:.asm=.o)
 
 all: $(NAME)
